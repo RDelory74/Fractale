@@ -1,15 +1,22 @@
-import campus.fractale.app.frame.DragonCurve;
+
+import campus.fractale.app.frame.RequstInt;
+import campus.fractale.app.frame.Speed;
 import campus.fractale.app.frame.Visualizer;
 
-import javax.swing.*;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //String iter =   JOptionPane.showInputDialog("How many iterations?");
-        //System.out.println(iter);
-        DragonCurve dragon = new DragonCurve();
-        dragon.drawDragonCurve(10,50,50,50,50,true);
+        //Fenetre pour récupérer le nbr d'itérations
+        RequstInt requstInt = new RequstInt();
+        int iter = requstInt.getValeur();
+        System.out.println(iter);
+
+       /* Speed speed = new Speed();
+        int delay = speed.getDelay();
+        System.out.println(delay);
+        */
+
+        // Création de la frame
+        Visualizer.createAndShowGUI(iter);
     }
 }
