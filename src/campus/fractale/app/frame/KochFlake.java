@@ -46,7 +46,7 @@ public class KochFlake {
 
         drawKochFlake(g, iter -1, xC, yC, xA, yA);
         drawKochFlake(g, iter -1, xA, yA, xB, yB);
-        drawKochFlake(g, iter -1, xB, yB, xC, yC);
+        drawKochFlake(g, iter -1, xC, yC, xB, yB);
        // drawKochFlake(g, iter -1, xC, yC, x2, y2);
 
     }
